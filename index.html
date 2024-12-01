@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Telegram WebApp</title>
+  <link rel="stylesheet" href="111.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 id="welcome-message">Welcome to the Telegram WebApp!</h1>
+    <button id="open-modal" class="button">Open Modal</button>
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Create a Room</h2>
+        <form id="room-form">
+          <label for="room-name">Room Name:</label>
+          <input type="text" id="room-name" required />
+
+          <label for="trophies">Trophies:</label>
+          <input type="number" id="trophies" required />
+
+          <label for="elo">ELO:</label>
+          <input type="number" id="elo" required />
+
+          <button type="submit" class="button">Create</button>
+        </form>
+        <button id="close-modal" class="button">Close</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+  <script src="server.js"></script>
+</body>
+</html>
